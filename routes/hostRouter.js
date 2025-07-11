@@ -8,7 +8,7 @@ const router = express.Router();
 
 router.get("/add-home", homesController.getAddHome);
 
-router.post("/add-home", homesController.postHOme);
+router.post("/add-home", homesController.postHome);
 
 router.get("/edit-home/:id", homesController.getEditHome);
 
