@@ -155,6 +155,16 @@ CREATE TABLE contacts (
     message TEXT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE homes (
+    home_id SERIAL PRIMARY KEY,
+    name VARCHAR(255) DEFAULT NULL,
+    location VARCHAR(255) DEFAULT NULL,
+    price DECIMAL(10,2) DEFAULT 0,
+    description TEXT,
+    photo VARCHAR(255),
+    rating NUMERIC(3,1);
+);
 ```
 
 ## 🔧 Configuration
