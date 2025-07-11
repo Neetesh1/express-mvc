@@ -91,6 +91,17 @@ airbnb-mvc/
        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
    );
 
+   --Crate homes table
+   CREATE TABLE homes (
+        home_id SERIAL PRIMARY KEY,
+        name VARCHAR(255) DEFAULT NULL,
+        location VARCHAR(255) DEFAULT NULL,
+        price DECIMAL(10,2) DEFAULT 0,
+        description TEXT,
+        photo VARCHAR(255),
+        rating NUMERIC(3,1);
+    );
+
    -- Add other tables as needed for homes/listings
    ```
 
